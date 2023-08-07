@@ -8,7 +8,7 @@ const vehiclesRouter = require("./routes/vehicles")
 
 const app = express(); // DECLARE APP THAT USES EXPRESS
 
-let PORT = 5001; // DEFINE PORT
+const port = process.env.PORT || 5001; // DEFINE PORT
 app.use(express.json()); // LETS APP USE JSON
 
 
@@ -21,6 +21,6 @@ app.use(vehiclesRouter)
 
 
 
-app.listen(PORT, () => {
-    console.log('Application is listening on port', PORT)
-})
+app.listen(port, () => {
+    console.log(`Web server is listening on port ${port}!`);
+});

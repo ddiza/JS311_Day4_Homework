@@ -2,12 +2,18 @@
   "name": "js311_day4_homework",
   "scripts": {
     "start": "node ./index.js",
-    "dev" : "nodemon ./index.js"
+    "dev": "nodemon ./index.js"
   },
   "devDependencies": {
     "nodemon": "3.0.1"
   },
   "dependencies": {
     "express": "4.18.2"
-  }
+  },
+  "description": "Initialize and run the app: `npm install` && `npm start`.\r To run the app in Development mode: `npm run dev`",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
